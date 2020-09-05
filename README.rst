@@ -4,8 +4,8 @@ Serial client for SENAITE
 .. image:: https://img.shields.io/pypi/v/senaite.serial.cli.svg?style=flat-square
     :target: https://pypi.python.org/pypi/senaite.serial.cli
 
-.. image:: https://img.shields.io/travis/senaite/senaite.serial.cli/master.svg?style=flat-square
-    :target: https://travis-ci.org/senaite/senaite.serial.cli
+.. image:: https://readthedocs.org/projects/pip/badge/
+    :target: https://senaiteserialcli.readthedocs.org
 
 .. image:: https://img.shields.io/github/issues-pr/senaite/senaite.serial.cli.svg?style=flat-square
     :target: https://github.com/senaite/senaite.serial.cli/pulls
