@@ -27,8 +27,8 @@ from serial.serialutil import to_bytes
 
 import lims
 from . import logger
-from .astm import ASTMHandler
-from .astm import ASTMToSenaiteHandler
+from .lis1a import LIS1AHandler
+from .lis1a import LIS1AToSenaiteHandler
 
 
 def start_server(port, baud_rate, receiver):
@@ -78,12 +78,12 @@ def get_receiver(args):
             logger.error(e.message)
             sys.exit(-1)
 
-        # ASTM-to-SENAITE handler
-        receiver = ASTMToSenaiteHandler(**params)
+        # LIS1A-to-SENAITE handler
+        receiver = LIS1AToSenaiteHandler(**params)
 
     else:
-        # Basic ASTM handler
-        receiver = ASTMHandler(**params)
+        # Basic LIS1-A handler
+        receiver = LIS1AHandler(**params)
 
     return receiver
 

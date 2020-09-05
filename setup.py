@@ -18,7 +18,7 @@ setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
-    keywords=["senaite", "lims", "rs-232", "astm"],
+    keywords=["senaite", "lims", "rs-232", "lis1-a"],
     author="RIDING BYTES & NARALABS",
     author_email="senaite@senaite.com",
     url="https://github.com/senaite/senaite.serial.cli",

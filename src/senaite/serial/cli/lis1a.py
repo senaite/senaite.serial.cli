@@ -29,9 +29,9 @@ from .handler import MessageHandler
 STX = b'\x02'
 #: Message end token.
 ETX = b'\x03'
-#: ASTM session termination token.
+#: Session termination token.
 EOT = b'\x04'
-#: ASTM session initialization token.
+#: Session initialization token.
 ENQ = b'\x05'
 #: Command accepted token.
 ACK = b'\x06'
@@ -286,8 +286,8 @@ class Frame(object):
         return False
 
 
-class ASTMHandler(MessageHandler):
-    """Generic ASTM receiver, compliant with ASTM-E1381-95 standard
+class LIS1AHandler(MessageHandler):
+    """Generic receiver compliant with LIS1-A standard (formerly ASTM E1381)
     """
 
     messages = []
@@ -492,12 +492,12 @@ class ASTMHandler(MessageHandler):
         return resp
 
 
-class ASTMToSenaiteHandler(ASTMHandler):
-    """ASTM receiver that is capable to directly send the results to SENAITE
+class LIS1AToSenaiteHandler(LIS1AHandler):
+    """LIS1-A receiver that is capable to directly send the results to SENAITE
     """
 
     def __init__(self, url, user, password, **kwargs):
-        super(ASTMToSenaiteHandler, self).__init__(**kwargs)
+        super(LIS1AHandler, self).__init__(**kwargs)
         self._url = url
         self._user = user
         self._password = password
@@ -506,7 +506,7 @@ class ASTMToSenaiteHandler(ASTMHandler):
         self._dry_run = kwargs and kwargs.get("dry-run") or False
 
     def notify(self):
-        super(ASTMToSenaiteHandler, self).notify()
+        super(LIS1AHandler, self).notify()
 
         if self._dry_run:
             # Dry Run. Do not notify SENAITE LIMS
@@ -525,7 +525,7 @@ class ASTMToSenaiteHandler(ASTMHandler):
 
         # Build the POST payload
         payload = {
-            "consumer": "senaite.serial.astm.import",
+            "consumer": "senaite.lis2a2.import",
             "messages": messages,
         }
 
