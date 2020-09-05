@@ -1,1 +1,0 @@
-echo -n -e `sed -n $2p docs/examples/example1` > $1
