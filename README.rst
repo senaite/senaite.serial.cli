@@ -31,12 +31,6 @@ Laboratory Instruments and Computer Systems"*, a revision of `ASTM E1381-02`_.
 However, this tool is meant to be generic enough so it can be extended with
 other communication protocols and standards.
 
-.. note:: In 2001, `ASTM Committee E31`_ decided to restructure its operations,
-   with the intent of focusing on standards-development issues such as security,
-   privacy, and the electronic health record. Part of the reorganization plan
-   was to transfer responsibility for E31.13 standards to NCCLS. Following this
-   transfer, standard ASTM E1381 was redesignated as NCCLS standards LIS1.
-
 This command line tool works together with `senaite.lis2a2`_, an add-on that
 enables the reception and interpretation of CLSI `LIS2-A2`_ messages for
 `SENAITE LIMS`_.
