@@ -31,7 +31,7 @@ Laboratory Instruments and Computer Systems"*, a revision of `ASTM E1381-02`_.
 However, this tool is meant to be generic enough so it can be extended with
 other communication protocols and standards.
 
-This command line tool works together with `senaite.lis2a2`_, an add-on that
+This command line tool works together with `senaite.lis2a`_, an add-on that
 enables the reception and interpretation of CLSI `LIS2-A2`_ messages for
 `SENAITE LIMS`_.
 
@@ -107,7 +107,7 @@ GNU General Public License for more details.
 .. _ASTM E1381-02: https://www.astm.org/Standards/E1381.htm
 .. _ASTM E1394-97: https://www.astm.org/Standards/E1394.htm
 .. _ASTM Committee E31: https://www.astm.org/COMMITTEE/E31.htm
-.. _senaite.lis2a2: https://pypi.python.org/pypi/senaite.lis2a2
+.. _senaite.lis2a: https://pypi.python.org/pypi/senaite.lis2a
 .. _SENAITE LIMS: https://www.senaite.com
 .. _Community site: https://community.senaite.org/
 .. _Gitter channel: https://gitter.im/senaite/Lobby

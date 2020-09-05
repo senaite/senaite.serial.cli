@@ -525,7 +525,7 @@ class LIS1AToSenaiteHandler(LIS1AHandler):
 
         # Build the POST payload
         payload = {
-            "consumer": "senaite.lis2a2.import",
+            "consumer": "senaite.lis2a.import",
             "messages": messages,
         }
 

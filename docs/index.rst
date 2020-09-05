@@ -18,7 +18,7 @@ other communication protocols and standards.
    was to transfer responsibility for E31.13 standards to NCCLS. Following this
    transfer, standard ASTM E1381 was redesignated as NCCLS standards LIS1.
 
-This command line tool works together with `senaite.lis2a2`_, an add-on that
+This command line tool works together with `senaite.lis2a`_, an add-on that
 enables the reception and interpretation of CLSI `LIS2-A2`_ messages for
 `SENAITE LIMS`_.
 
@@ -42,6 +42,6 @@ Table of Contents:
 .. _ASTM E1381-02: https://www.astm.org/Standards/E1381.htm
 .. _ASTM E1394-97: https://www.astm.org/Standards/E1394.htm
 .. _ASTM Committee E31: https://www.astm.org/COMMITTEE/E31.htm
-.. _senaite.lis2a2: https://pypi.python.org/pypi/senaite.lis2a2
+.. _senaite.lis2a: https://pypi.python.org/pypi/senaite.lis2a2
 .. _SENAITE LIMS: https://www.senaite.com
 
