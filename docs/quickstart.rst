@@ -3,7 +3,7 @@ Quickstart
 
 Check the --help from senaite.serial.cli with:
 
-.. code-block::shell
+.. code-block:: shell
 
     $ senaite_serial -h
     usage: senaite_serial [-h] [-v] [-b BAUDRATE] [-u URL] [-r RETRIES] [-d DELAY]

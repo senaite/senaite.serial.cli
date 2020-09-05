@@ -3,7 +3,7 @@ Testing
 
 It is possible to use `socat` to create a pair of virtual serial ports:
 
-.. code-block::shell
+.. code-block:: shell
 
     $ socat -d -d pty,raw,echo=0 pty,raw,echo=0
     2019/05/02 17:26:21 socat[24050] N PTY is /dev/ttys002
@@ -13,14 +13,14 @@ In this example, two serial ports `ttys002` and `ttys007` were created.
 
 Now we can start the command tool listening on one serial port:
 
-.. code-block::shell
+.. code-block:: shell
 
     $ serial -v /dev/ttys007
     Listening on port /dev/ttys007, press Ctrl+c to exit.
 
 And send messages to the other port:
 
-.. code-block::shell
+.. code-block:: shell
 
     $ echo "H|Hello|Serial|Port|\nL|1" > /dev/ttys002
 
@@ -32,21 +32,21 @@ If you have a file with the data to be transmitted, you can make use of `sed` to
 read and send the contents of the file line by line. Create a bash script file
 "send" first, like follows:
 
-.. code-block::bash
+.. code-block:: bash
 
     #!/bin/bash
     echo -n -e `sed -n $3p $1` > $2
 
 Give execution permissions:
 
-.. code-block::shell
+.. code-block:: shell
 
     $ chmod +x send
 
 Having a file "input.txt", you can send the contents of this file sequentially,
 by executing the following command:
 
-.. code-block::shell
+.. code-block:: shell
 
     $ send input.txt /dev/ttys002 1
 

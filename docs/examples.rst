@@ -10,7 +10,7 @@ Input:
 
 Output:
 
-.. code-block::shell
+.. code-block:: shell
 
     $ senaite_serial /dev/pts/7
     Listening on port /dev/pts/7, press Ctrl+c to exit.
