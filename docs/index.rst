@@ -32,6 +32,7 @@ Table of Contents:
    quickstart
    testing
    examples
+   license
 
 
 .. Links
