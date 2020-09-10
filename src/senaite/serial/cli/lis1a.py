@@ -497,7 +497,7 @@ class LIS1AToSenaiteHandler(LIS1AHandler):
     """
 
     def __init__(self, url, user, password, **kwargs):
-        super(LIS1AHandler, self).__init__(**kwargs)
+        super(LIS1AToSenaiteHandler, self).__init__(**kwargs)
         self._url = url
         self._user = user
         self._password = password
@@ -506,7 +506,7 @@ class LIS1AToSenaiteHandler(LIS1AHandler):
         self._dry_run = kwargs and kwargs.get("dry-run") or False
 
     def notify(self):
-        super(LIS1AHandler, self).notify()
+        super(LIS1AToSenaiteHandler, self).notify()
 
         if self._dry_run:
             # Dry Run. Do not notify SENAITE LIMS
